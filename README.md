@@ -80,8 +80,8 @@ Some links:
 
 ### `remark.use(gitlab[, options])`
 
-Automatically link references to commits, issues, merge-requests, and users, like
-in gitlab issues, PRs, and comments.
+Automatically link references to commits, issues, merge-requests, and users,
+like in gitlab issues, PRs, and comments.
 
 ###### Conversion
 
