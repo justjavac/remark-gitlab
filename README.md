@@ -1,6 +1,6 @@
 # remark-gitlab
 
-[![Build][build-badge]][build]
+[![ci](https://github.com/justjavac/remark-gitlab/actions/workflows/ci.yml/badge.svg)](https://github.com/justjavac/remark-gitlab/actions/workflows/ci.yml)
 [![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
@@ -123,10 +123,6 @@ Pass `mentionStrong: false` to turn off this behavior.
 [remark-gitlab](https://github.com/justjavac/remark-gitlab) is released under
 the MIT License.
 See the bundled [LICENSE](./LICENSE) file for details.
-
-[build-badge]: https://github.com/justjavac/remark-gitlab/workflows/main/badge.svg
-
-[build]: https://github.com/justjavac/remark-gitlab/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/justjavac/remark-gitlab.svg
 
