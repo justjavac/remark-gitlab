@@ -1,6 +1,6 @@
 {
   "name": "remark-gitlab",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "remark plugin to autolink references like in GitLab issues, MRs, and comments",
   "license": "MIT",
   "keywords": [
@@ -8,16 +8,8 @@
     "remark",
     "remark-plugin",
     "plugin",
-    "mdast",
     "markdown",
-    "writing",
-    "on",
-    "gitlab",
-    "sha",
-    "user",
-    "issue",
-    "mention",
-    "reference"
+    "gitlab"
   ],
   "repository": "justjavac/remark-gitlab",
   "bugs": "https://github.com/justjavac/remark-gitlab/issues",
