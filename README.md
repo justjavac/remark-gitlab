@@ -86,19 +86,19 @@ like in gitlab issues, PRs, and comments.
 ###### Conversion
 
 *   Commits:
-    `1f2a4fb` → \[`1f2a4fb`]\[sha]
+    `f9c6cca3` → [`f9c6cca3`][sha]
 *   Commits across forks:
-    `justjavac@1f2a4fb` → \[justjavac@`1f2a4fb`]\[sha]
+    `justjavac@f9c6cca3` → [justjavac@`f9c6cca3`][sha]
 *   Commits across projects:
-    `user/project@1f2a4fb` → \[user/project@`1f2a4fb`]\[sha]
+    `user/project@f9c6cca3` → [user/project@`f9c6cca3`][sha]
 *   Hash issues:
-    `#1` → \[[#1](https://github.com/justjavac/remark-gitlab/issues/1)]\[issue]
+    `#1` → [#1][issue]
 *   Issues across forks:
-    `justjavac#1` → \[[justjavac#1](https://github.com/justjavac/remark-gitlab/issues/1)]\[issue]
+    `justjavac#1` → [justjavac#1][issue]
 *   Issues across projects:
-    `justjavac/remark-gitlab#1` → \[[justjavac#1](https://github.com/justjavac/remark-gitlab/issues/1)]\[issue]
+    `justjavac/remark-gitlab#1` → [justjavac#1][issue]
 *   At-mentions:
-    `@user` → \[**[**@user**](https://github.com/user)**]\[mention]
+    `@user` → [**[**@user**]**][mention]
 
 ###### Repository
 
@@ -135,3 +135,9 @@ See the bundled [LICENSE](./LICENSE) file for details.
 [npm-badge]: https://img.shields.io/npm/v/remark-gitlab.svg
 
 [npm-url]: https://npmjs.com/package/remark-gitlab
+
+[sha]: https://gitlab.com/gitlab-org/gitlab/-/commit/f9c6cca3f9def676bea243be5c49498d6a9258fb
+
+[issue]: https://gitlab.com/gitlab-org/gitlab/-/issues/1
+
+[mention]: https://gitlab.com/justjavac
