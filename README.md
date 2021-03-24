@@ -2,7 +2,7 @@
 
 [![ci](https://github.com/justjavac/remark-gitlab/actions/workflows/ci.yml/badge.svg)](https://github.com/justjavac/remark-gitlab/actions/workflows/ci.yml)
 [![Coverage][coverage-badge]][coverage]
-[![Downloads][downloads-badge]][downloads]
+[![npm][npm-badge]][npm-url]
 [![Size][size-badge]][size]
 
 [**remark**](https://github.com/remarkjs/remark) plugin to automatically
@@ -128,10 +128,10 @@ See the bundled [LICENSE](./LICENSE) file for details.
 
 [coverage]: https://codecov.io/github/justjavac/remark-gitlab
 
-[downloads-badge]: https://img.shields.io/npm/dm/remark-gitlab.svg
-
-[downloads]: https://www.npmjs.com/package/remark-gitlab
-
 [size-badge]: https://img.shields.io/bundlephobia/minzip/remark-gitlab.svg
 
 [size]: https://bundlephobia.com/result?p=remark-gitlab
+
+[npm-badge]: https://img.shields.io/npm/v/remark-gitlab.svg
+
+[npm-url]: https://npmjs.com/package/remark-gitlab
