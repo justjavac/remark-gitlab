@@ -21,7 +21,7 @@ try {
 // Previously, GitLab linked `@all` to entire team.
 var denyMention = ['all']
 
-// see <https://github.com/remarkjs/remark-github/issues/20>.
+// See <https://github.com/remarkjs/remark-github/issues/20>.
 var denyHash = ['acceded', 'deedeed', 'defaced', 'effaced', 'fabaceae']
 
 // Constants.
@@ -34,7 +34,7 @@ var repoGroup = '(' + userGroup + ')\\/(' + projectGroup + ')'
 var linkRegex = new RegExp(
   '^https?:\\/\\/gitlab\\.com\\/' +
     repoGroup +
-    '\\/(commit|issues|pull)\\/([a-f\\d]+\\/?(?=[#?]|$))',
+    '\\/(commit|issues|merge_requests)\\/([a-f\\d]+\\/?(?=[#?]|$))',
   'i'
 )
 
@@ -89,7 +89,7 @@ function gitlab(options) {
       [
         [referenceRegex, replaceReference],
         [mentionRegex, replaceMention],
-        [/(?:#)([1-9]\d*)/gi, replaceIssue],
+        [/#([1-9]\d*)/gi, replaceIssue],
         [/\b[a-f\d]{7,40}\b/gi, replaceHash]
       ],
       {ignore: ['link', 'linkReference']}

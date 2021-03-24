@@ -5,8 +5,9 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-[**remark**](https://github.com/remarkjs/remark) plugin to automatically link references to commits, issues,
-merge-requests, and users, like in gitlab issues, MRs, and comments.
+[**remark**](https://github.com/remarkjs/remark) plugin to automatically
+link references to commits, issues, merge-requests, and users, like in
+gitlab issues, MRs, and comments.
 
 ## Install
 
@@ -23,20 +24,19 @@ Some references:
 
 *   Commit: f8083175fe890cbf14f41d0a06e7aa35d4989587
 *   Commit (fork): foo@f8083175fe890cbf14f41d0a06e7aa35d4989587
-*   Commit (repo): remarkjs/remark@e1aa9f6c02de18b9459b7d269712bcb50183ce89
-*   Issue or PR (`#`): #1
-*   Issue or PR (`GH-`): GH-1
-*   Issue or PR (fork): foo#1
-*   Issue or PR (project): remarkjs/remark#1
-*   Mention: @wooorm
+*   Commit (repo): justjavac/remark-gitlab@e1aa9f6c02de18b9459b7d269712bcb50183ce89
+*   Issue (`#`): #1
+*   Issue (fork): foo#1
+*   Issue (project): justjavac/remark-gitlab#1
+*   Mention: @justjavac
 
 Some links:
 
-*   Commit: <https://gitlab.com/remarkjs/remark/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89>
-*   Commit comment: <https://gitlab.com/remarkjs/remark/commit/ac63bc3abacf14cf08ca5e2d8f1f8e88a7b9015c#commitcomment-16372693>
-*   Issue or PR: <https://gitlab.com/remarkjs/remark/issues/182>
-*   Issue or PR comment: <https://gitlab.com/remarkjs/remark-gitlab/issues/3#issue-151160339>
-*   Mention: <https://gitlab.com/ben-eb>
+*   Commit: <https://gitlab.com/justjavac/remark-gitlab/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89>
+*   Commit comment: <https://gitlab.com/justjavac/remark-gitlab/commit/ac63bc3abacf14cf08ca5e2d8f1f8e88a7b9015c#commitcomment-16372693>
+*   Issue: <https://gitlab.com/justjavac/remark-gitlab/issues/182>
+*   Issue: <https://gitlab.com/justjavac/remark-gitlab/issues/3#issue-151160339>
+*   Mention: <https://gitlab.com/justjavac>
 ```
 
 And our script, `example.js`, looks as follows:
@@ -59,49 +59,46 @@ Now, running `node example` yields:
 ```markdown
 Some references:
 
-*   Commit: [`f808317`](https://gitlab.com/remarkjs/remark-gitlab/commit/f8083175fe890cbf14f41d0a06e7aa35d4989587)
+*   Commit: [`f808317`](https://gitlab.com/justjavac/remark-gitlab/commit/f8083175fe890cbf14f41d0a06e7aa35d4989587)
 *   Commit (fork): [foo@`f808317`](https://gitlab.com/foo/remark-gitlab/commit/f8083175fe890cbf14f41d0a06e7aa35d4989587)
-*   Commit (repo): [remarkjs/remark@`e1aa9f6`](https://gitlab.com/remarkjs/remark/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89)
-*   Issue or PR (`#`): [#1](https://gitlab.com/remarkjs/remark-gitlab/issues/1)
-*   Issue or PR (`GH-`): [GH-1](https://gitlab.com/remarkjs/remark-gitlab/issues/1)
-*   Issue or PR (fork): [foo#1](https://gitlab.com/foo/remark-gitlab/issues/1)
-*   Issue or PR (project): [remarkjs/remark#1](https://gitlab.com/remarkjs/remark/issues/1)
-*   Mention: [**@wooorm**](https://gitlab.com/wooorm)
+*   Commit (repo): [justjavac/remark@`e1aa9f6`](https://gitlab.com/justjavac/remark-gitlab/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89)
+*   Issue (`#`): [#1](https://gitlab.com/justjavac/remark-gitlab/issues/1)
+*   Issue (fork): [foo#1](https://gitlab.com/foo/remark-gitlab/issues/1)
+*   Issue (project): [justjavac/remark#1](https://gitlab.com/justjavac/remark-gitlab/issues/1)
+*   Mention: [**@justjavac**](https://gitlab.com/justjavac)
 
 Some links:
 
-*   Commit: [remarkjs/remark@`e1aa9f6`](https://gitlab.com/remarkjs/remark/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89)
-*   Commit comment: [remarkjs/remark@`ac63bc3` (comment)](https://gitlab.com/remarkjs/remark/commit/ac63bc3abacf14cf08ca5e2d8f1f8e88a7b9015c#commitcomment-16372693)
-*   Issue or PR: [remarkjs/remark#182](https://gitlab.com/remarkjs/remark/issues/182)
-*   Issue or PR comment: [#3 (comment)](https://gitlab.com/remarkjs/remark-gitlab/issues/3#issue-151160339)
-*   Mention: <https://gitlab.com/ben-eb>
+*   Commit: [justjavac/remark@`e1aa9f6`](https://gitlab.com/justjavac/remark-gitlab/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89)
+*   Commit comment: [justjavac/remark@`ac63bc3` (comment)](https://gitlab.com/justjavac/remark-gitlab/commit/ac63bc3abacf14cf08ca5e2d8f1f8e88a7b9015c#commitcomment-16372693)
+*   Issue: [justjavac/remark#182](https://gitlab.com/justjavac/remark-gitlab/issues/182)
+*   Issue comment: [#3 (comment)](https://gitlab.com/justjavac/remark-gitlab/issues/3#issue-151160339)
+*   Mention: <https://gitlab.com/justjavac>
 ```
 
 ## API
 
 ### `remark.use(gitlab[, options])`
 
-Automatically link references to commits, issues, pull-requests, and users, like
+Automatically link references to commits, issues, merge-requests, and users, like
 in gitlab issues, PRs, and comments.
 
 ###### Conversion
 
 *   Commits:
-    `1f2a4fb` → [`1f2a4fb`][sha]
+    `1f2a4fb` → \[`1f2a4fb`]\[sha]
 *   Commits across forks:
-    `remarkjs@1f2a4fb` → [remarkjs@`1f2a4fb`][sha]
+    `justjavac@1f2a4fb` → \[justjavac@`1f2a4fb`]\[sha]
 *   Commits across projects:
-    `remarkjs/remark-gitlab@1f2a4fb` → [remarkjs/remark-gitlab@`1f2a4fb`][sha]
-*   Prefix issues:
-    `GH-1` → [GH-1][issue]
+    `user/project@1f2a4fb` → \[user/project@`1f2a4fb`]\[sha]
 *   Hash issues:
-    `#1` → [#1][issue]
+    `#1` → \[[#1](https://github.com/justjavac/remark-gitlab/issues/1)]\[issue]
 *   Issues across forks:
-    `remarkjs#1` → [remarkjs#1][issue]
+    `justjavac#1` → \[[justjavac#1](https://github.com/justjavac/remark-gitlab/issues/1)]\[issue]
 *   Issues across projects:
-    `remarkjs/remark-gitlab#1` → [remarkjs/remark-gitlab#1][issue]
+    `justjavac/remark-gitlab#1` → \[[justjavac#1](https://github.com/justjavac/remark-gitlab/issues/1)]\[issue]
 *   At-mentions:
-    `@wooorm` → [**@wooorm**][mention]
+    `@user` → \[**[**@user**](https://github.com/user)**]\[mention]
 
 ###### Repository
 
@@ -121,35 +118,19 @@ However, this creates different HTML markup, as the gitlab site applies these
 styles using CSS.
 Pass `mentionStrong: false` to turn off this behavior.
 
-## Security
-
-Use of `remark-gitlab` does not involve [**rehype**][rehype] ([**hast**][hast]).
-It does inject links based on user content, but those links only go to gitlab.
-There are no openings for [cross-site scripting (XSS)][xss] attacks.
-
-## Contribute
-
-See [`contributing.md`][contributing] in [`remarkjs/.gitlab`][health] for ways
-to get started.
-See [`support.md`][support] for ways to get help.
-
-This project has a [code of conduct][coc].
-By interacting with this repository, organization, or community you agree to
-abide by its terms.
-
 ## License
 
-[MIT][license] © [Titus Wormer][author]
+[remark-gitlab](https://github.com/justjavac/remark-gitlab) is released under
+the MIT License.
+See the bundled [LICENSE](./LICENSE) file for details.
 
-<!-- Definitions -->
+[build-badge]: https://github.com/justjavac/remark-gitlab/workflows/main/badge.svg
 
-[build-badge]: https://github.com/remarkjs/remark-gitlab/workflows/main/badge.svg
+[build]: https://github.com/justjavac/remark-gitlab/actions
 
-[build]: https://github.com/remarkjs/remark-gitlab/actions
+[coverage-badge]: https://img.shields.io/codecov/c/github/justjavac/remark-gitlab.svg
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/remarkjs/remark-gitlab.svg
-
-[coverage]: https://codecov.io/github/remarkjs/remark-gitlab
+[coverage]: https://codecov.io/github/justjavac/remark-gitlab
 
 [downloads-badge]: https://img.shields.io/npm/dm/remark-gitlab.svg
 
