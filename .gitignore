@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+.nyc_output/
+coverage/
+node_modules/
+remark-gitlab.js
+remark-gitlab.min.js
+yarn.lock
