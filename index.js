@@ -234,10 +234,10 @@ function gitlab(options) {
 
     if (link.user !== repository.user) {
       base = link.user + '/' + link.project
-    } else if (link.project !== repository.project) {
-      base = link.project
-    } else {
+    } else if (link.project === repository.project) {
       base = ''
+    } else {
+      base = link.project
     }
 
     if (link.page === 'commit') {
