@@ -1,6 +1,6 @@
 {
   "name": "remark-gitlab",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "remark plugin to autolink references like in GitLab issues, MRs, and comments",
   "license": "MIT",
   "keywords": [
