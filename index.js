@@ -30,16 +30,17 @@ var minShaLength = 7
 var userGroup = '[\\da-z][-\\da-z]{0,38}'
 var projectGroup = '(?:\\.git[\\w-]|\\.(?!git)|[\\w-])+'
 var repoGroup = '(' + userGroup + ')\\/(' + projectGroup + ')'
+var urlGroup = '(^(?:https?|git):\\/\\/[a-zA-Z0-9\\.]+)?(?:\\/)?'
 
 var linkRegex = new RegExp(
-  '^https?:\\/\\/gitlab\\.com\\/' +
+  '^(https?:\\/\\/[a-zA-Z0-9\\.]+)\\/' +
     repoGroup +
     '\\/(commit|issues|merge_requests)\\/([a-f\\d]+\\/?(?=[#?]|$))',
   'i'
 )
 
 var repoRegex = new RegExp(
-  '(?:^|/(?:repos/)?)' + repoGroup + '(?=\\.git|[\\/#@]|$)',
+  urlGroup + repoGroup + '(?=\\.git|[\\/#@]|$)',
   'i'
 )
 
@@ -79,7 +80,7 @@ function gitlab(options) {
     throw new Error('Missing `repository` field in `options`')
   }
 
-  repository = {user: repository[1], project: repository[2]}
+  repository = {url: repository[1] || 'https://gitlab.com', user: repository[2], project: repository[3]}
 
   return transformer
 
@@ -272,20 +273,21 @@ function parse(node) {
     node.children[0].type !== 'text' ||
     toString(node) !== url ||
     // Issues / PRs are decimal only.
-    (match[3] !== 'commit' && /[a-f]/i.test(match[4])) ||
+    (match[4] !== 'commit' && /[a-f]/i.test(match[5])) ||
     // SHAs can be min 4, max 40 characters.
-    (match[3] === 'commit' && (match[4].length < 4 || match[4].length > 40)) ||
+    (match[4] === 'commit' && (match[5].length < 4 || match[5].length > 40)) ||
     // Projects can be at most 99 characters.
-    match[2].length >= 100
+    match[3].length >= 100
   ) {
     return
   }
 
   return {
-    user: match[1],
-    project: match[2],
-    page: match[3],
-    reference: match[4],
+    url: match[1],
+    user: match[2],
+    project: match[3],
+    page: match[4],
+    reference: match[5],
     comment:
       url.charAt(match[0].length) === '#' && match[0].length + 1 < url.length
   }

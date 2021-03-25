@@ -58,18 +58,17 @@ test('Fixtures', function (t) {
 })
 
 // List of repo references possible in `package.json`s.
-// From repo-utils/parse-gitlab-repo-url, with some tiny additions.
 var repositories = [
   ['component/emitter', 'component', 'emitter'],
   ['https://gitlab.com/component/emitter', 'component', 'emitter'],
   ['git://gitlab.com/component/emitter.git', 'component', 'emitter'],
   [
-    'https://gitlab.com/repos/component/emitter/tarball',
+    'https://gitlab.com/component/emitter/tarball',
     'component',
     'emitter'
   ],
   [
-    'https://gitlab.com/repos/component/emitter/zipball',
+    'https://gitlab.com/component/emitter/zipball',
     'component',
     'emitter'
   ],
@@ -89,12 +88,12 @@ var repositories = [
   ['component/emitter@"1"', 'component', 'emitter'],
   ['git://gitlab.com/component/emitter.git#1', 'component', 'emitter'],
   [
-    'https://gitlab.com/repos/component/emitter/tarball/1',
+    'https://gitlab.com/component/emitter/tarball/1',
     'component',
     'emitter'
   ],
   [
-    'https://gitlab.com/repos/component/emitter/zipball/1',
+    'https://gitlab.com/component/emitter/zipball/1',
     'component',
     'emitter'
   ],
