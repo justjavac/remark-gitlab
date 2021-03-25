@@ -232,12 +232,12 @@ function gitlab(options) {
 
     comment = link.comment ? ' (comment)' : ''
 
-    if (link.project !== repository.project) {
+    if (link.user !== repository.user) {
       base = link.user + '/' + link.project
-    } else if (link.user === repository.user) {
-      base = ''
+    } else if (link.project !== repository.project) {
+      base = link.project
     } else {
-      base = link.user
+      base = ''
     }
 
     if (link.page === 'commit') {

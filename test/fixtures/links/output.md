@@ -46,13 +46,13 @@ A too short commit (should not render):
 <https://gitlab.com/wooorm/remark/commit/1f2>
 
 Across users:
-[foo@`1f2a`](https://gitlab.com/foo/remark/commit/1f2a)
+[foo/remark@`1f2a`](https://gitlab.com/foo/remark/commit/1f2a)
 
 Across repositories:
 [foo/bar@`1f2a`](https://gitlab.com/foo/bar/commit/1f2a)
 
 Same user, different repository:
-[wooorm/bar@`1f2a`](https://gitlab.com/wooorm/bar/commit/1f2a)
+[bar@`1f2a`](https://gitlab.com/wooorm/bar/commit/1f2a)
 
 Too long repo
 <https://gitlab.com/user/1231231231231231231231231231231231231231231231231231231231231231231231231231231231231231231231231231/commit/1f2a>
@@ -66,13 +66,13 @@ Not a comment (should not render comment part):
 [`1f2a`](https://gitlab.com/wooorm/remark/commit/1f2a#)
 
 Across users:
-[foo@`1f2a` (comment)](https://gitlab.com/foo/remark/commit/1f2a#commitcomment-12312312)
+[foo/remark@`1f2a` (comment)](https://gitlab.com/foo/remark/commit/1f2a#commitcomment-12312312)
 
 Across repositories:
 [foo/bar@`1f2a` (comment)](https://gitlab.com/foo/bar/commit/1f2a#commitcomment-12312312)
 
 Same user, different repository:
-[wooorm/bar@`1f2a` (comment)](https://gitlab.com/wooorm/bar/commit/1f2a#commitcomment-12312312)
+[bar@`1f2a` (comment)](https://gitlab.com/wooorm/bar/commit/1f2a#commitcomment-12312312)
 
 ## Issues
 
@@ -95,22 +95,22 @@ Not a merge_requests, no HTTPS (should not render):
 [#2](http://gitlab.com/wooorm/remark/merge_requests/2)
 
 Issues across users:
-[foo#2](https://gitlab.com/foo/remark/issues/2)
+[foo/remark#2](https://gitlab.com/foo/remark/issues/2)
 
 Issues across repositories:
 [foo/bar#2](https://gitlab.com/foo/bar/issues/2)
 
 Issues on same user, different repository:
-[wooorm/bar#2](https://gitlab.com/wooorm/bar/issues/2)
+[bar#2](https://gitlab.com/wooorm/bar/issues/2)
 
 Pulls across users:
-[foo#2](https://gitlab.com/foo/remark/merge_requests/2)
+[foo/remark#2](https://gitlab.com/foo/remark/merge_requests/2)
 
 Pulls across repositories:
 [foo/bar#2](https://gitlab.com/foo/bar/merge_requests/2)
 
 Pull on same user, different repository:
-[wooorm/bar#2](https://gitlab.com/wooorm/bar/merge_requests/2)
+[bar#2](https://gitlab.com/wooorm/bar/merge_requests/2)
 
 Issue with non-digit:
 <https://gitlab.com/wooorm/bar/issues/2a>
@@ -130,22 +130,22 @@ Not a comment (should not render comment part):
 [#2](https://gitlab.com/wooorm/remark/issues/2#)
 
 Issues comment across users:
-[foo#2 (comment)](https://gitlab.com/foo/remark/issues/2#note-123123)
+[foo/remark#2 (comment)](https://gitlab.com/foo/remark/issues/2#note-123123)
 
 Issues comment across repositories:
 [foo/bar#2 (comment)](https://gitlab.com/foo/bar/issues/2#note-123123)
 
 Issues comment on same user, different repository:
-[wooorm/bar#2 (comment)](https://gitlab.com/wooorm/bar/issues/2#note-123123)
+[bar#2 (comment)](https://gitlab.com/wooorm/bar/issues/2#note-123123)
 
 Pull comment across users:
-[foo#2 (comment)](https://gitlab.com/foo/remark/merge_requests/2#note-123123)
+[foo/remark#2 (comment)](https://gitlab.com/foo/remark/merge_requests/2#note-123123)
 
 Pull comment across repositories:
 [foo/bar#2 (comment)](https://gitlab.com/foo/bar/merge_requests/2#note-123123)
 
 Pull comment on same user, different repository:
-[wooorm/bar#2 (comment)](https://gitlab.com/wooorm/bar/issues/2#note-123123)
+[bar#2 (comment)](https://gitlab.com/wooorm/bar/issues/2#note-123123)
 
 ## Users
 
