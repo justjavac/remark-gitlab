@@ -190,7 +190,7 @@ function gitlab(options) {
       value += user
     }
 
-    if (project && project !== repository.project) {
+    if (project) {
       value = user + '/' + project
     }
 
