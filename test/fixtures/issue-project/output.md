@@ -17,6 +17,6 @@ Usernames: this is not a valid, -foo/bar#1; but this is [w-w/bar#1](https://gitl
 
 Note that this is no longer valid, but used to be: [w-/bar#1](https://gitlab.com/w-/bar/issues/1).
 
-Project names: this is not a valid, wooorm/c.git#1; but this is [wooorm/c#1](https://gitlab.com/wooorm/c/issues/1), so is [w/w#1](https://gitlab.com/w/w/issues/1), and [ww/.gitconfig#1](https://gitlab.com/ww/.gitconfig/issues/1).
+Project names: this is not a valid, wooorm/c.git#1; but this is [c#1](https://gitlab.com/wooorm/c/issues/1), so is [w/w#1](https://gitlab.com/w/w/issues/1), and [ww/.gitconfig#1](https://gitlab.com/ww/.gitconfig/issues/1).
 
 This is too long: wooormwooormwooormwooormwooormwooormwooo/c#1 (40 character username).

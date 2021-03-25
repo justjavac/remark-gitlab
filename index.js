@@ -42,11 +42,11 @@ var linkRegex = new RegExp(
 var repoRegex = new RegExp(urlGroup + repoGroup + '(?=\\.git|[\\/#@]|$)', 'i')
 
 var referenceRegex = new RegExp(
-  '(' +
+  '(?:(' +
     userGroup +
-    ')(?:\\/(' +
+    ')\\/)?(' +
     projectGroup +
-    '))?(?:#([1-9]\\d*)|@([a-f\\d]{7,40}))',
+    ')(?:#([1-9]\\d*)|@([a-f\\d]{7,40}))',
   'gi'
 )
 
@@ -186,12 +186,10 @@ function gitlab(options) {
 
     nodes = []
 
-    if (user !== repository.user) {
-      value += user
-    }
-
-    if (project) {
-      value = user + '/' + project
+    if (user && user !== repository.user) {
+      value += user + '/' + project
+    } else if (project !== repository.project) {
+      value = project
     }
 
     if (no) {
@@ -209,9 +207,9 @@ function gitlab(options) {
       url:
         repository.url +
         '/' +
-        user +
+        (user || repository.user) +
         '/' +
-        (project || repository.project) +
+        project +
         '/' +
         (no ? 'issues' : 'commit') +
         '/' +

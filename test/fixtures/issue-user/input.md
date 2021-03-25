@@ -13,6 +13,9 @@ username#1
 and here
     username#1
 
+and here
+    wooorm/foobar#1
+
 This is not a valid, -username#1; but this is w-w#1, and so is w#1 and ww#1, and w-#1 used to be valid.
 
 This is too long: wooormwooormwooormwooormwooormwooormwooo#1 (40 character username).

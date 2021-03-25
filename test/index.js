@@ -110,8 +110,10 @@ test('Repositories', function (t) {
           project +
           '/commit/a5c3785ed8d6a35868bc169f07e40e' +
           '889087fd2e)',
-        '*   User@SHA: [wooorm@`a5c3785`](https://gitlab.com/wooorm/' +
-          project +
+        '*   User@SHA: [wooorm@`a5c3785`](https://gitlab.com/' +
+          user +
+          '/' +
+          'wooorm' +
           '/commit/a5c3785ed8d6a35868bc169f07e40e' +
           '889087fd2e)',
         '*   # Num: [#26](https://gitlab.com/' +
@@ -119,8 +121,10 @@ test('Repositories', function (t) {
           '/' +
           project +
           '/issues/26)',
-        '*   User#Num: [wooorm#26](https://gitlab.com/wooorm/' +
-          project +
+        '*   User#Num: [wooorm#26](https://gitlab.com/' +
+          user +
+          '/' +
+          'wooorm' +
           '/issues/26)',
         ''
       ].join('\n'),
@@ -137,7 +141,7 @@ test('Miscellaneous', function (t) {
   t.equal(
     gitlab('test@12345678', null),
     '[test@`1234567`](https://gitlab.com/' +
-      'test/remark-gitlab/commit/12345678)\n',
+      'justjavac/test/commit/12345678)\n',
     'should load a `package.json` when available'
   )
 

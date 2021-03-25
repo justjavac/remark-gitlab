@@ -28,13 +28,13 @@ After a plus sign +[#1](https://gitlab.com/wooorm/remark/issues/1).
 
 After a comma ,[#1](https://gitlab.com/wooorm/remark/issues/1).
 
-After a dash -[#1](https://gitlab.com/wooorm/remark/issues/1).
+After a dash [-#1](https://gitlab.com/wooorm/-/issues/1).
 
-After a dot .[#1](https://gitlab.com/wooorm/remark/issues/1).
+After a dot [.#1](https://gitlab.com/wooorm/./issues/1).
 
 After a slash /[#1](https://gitlab.com/wooorm/remark/issues/1).
 
-After a digit [0#1](https://gitlab.com/0/remark/issues/1).
+After a digit [0#1](https://gitlab.com/wooorm/0/issues/1).
 
 After a colon :[#1](https://gitlab.com/wooorm/remark/issues/1).
 
@@ -50,7 +50,7 @@ After a question mark ?[#1](https://gitlab.com/wooorm/remark/issues/1).
 
 After an at sign @[#1](https://gitlab.com/wooorm/remark/issues/1).
 
-After an upper case [A#1](https://gitlab.com/A/remark/issues/1).
+After an upper case [A#1](https://gitlab.com/wooorm/A/issues/1).
 
 After a left square bracket \[[#1](https://gitlab.com/wooorm/remark/issues/1).
 
@@ -60,11 +60,11 @@ After a right square bracket ][#1](https://gitlab.com/wooorm/remark/issues/1).
 
 After a caret ^[#1](https://gitlab.com/wooorm/remark/issues/1).
 
-After an underscore \_#1.
+After an underscore [\_#1](https://gitlab.com/wooorm/\_/issues/1).
 
 After a grave accent \`[#1](https://gitlab.com/wooorm/remark/issues/1).
 
-After a lower case [a#1](https://gitlab.com/a/remark/issues/1).
+After a lower case [a#1](https://gitlab.com/wooorm/a/issues/1).
 
 After a left curly brace {[#1](https://gitlab.com/wooorm/remark/issues/1).
 

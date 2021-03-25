@@ -10,4 +10,4 @@ Upper-case projects: [foobar/bAz@`0000000`](https://gitlab.com/foobar/bAz/commit
 
 [f/b#1](https://gitlab.com/f/b/issues/1). f/b#0. [f/b@`0000000`](https://gitlab.com/f/b/commit/0000000).
 
-.[#1](https://gitlab.com/wooorm/remark/issues/1). .[**@0000000**](https://gitlab.com/0000000). foo#. bar@.
+[.#1](https://gitlab.com/wooorm/./issues/1). [.@`0000000`](https://gitlab.com/wooorm/./commit/0000000). foo#. bar@.
