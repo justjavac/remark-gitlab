@@ -98,7 +98,7 @@ like in gitlab issues, PRs, and comments.
 *   Issues across projects:
     `justjavac/remark-gitlab#1` → [justjavac#1][issue]
 *   At-mentions:
-    `@user` → [**[**@user**]**][mention]
+    `@user` → [**\[**@user\*\*\]\*\*][mention]
 
 ###### Repository
 

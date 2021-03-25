@@ -62,51 +62,15 @@ var repositories = [
   ['component/emitter', 'component', 'emitter'],
   ['https://gitlab.com/component/emitter', 'component', 'emitter'],
   ['git://gitlab.com/component/emitter.git', 'component', 'emitter'],
-  [
-    'https://gitlab.com/component/emitter/tarball',
-    'component',
-    'emitter'
-  ],
-  [
-    'https://gitlab.com/component/emitter/zipball',
-    'component',
-    'emitter'
-  ],
-  [
-    'https://codeload.gitlab.com/component/emitter/legacy.zip',
-    'component',
-    'emitter'
-  ],
-  [
-    'https://codeload.gitlab.com/component/emitter/legacy.tar.gz',
-    'component',
-    'emitter'
-  ],
+  ['https://gitlab.com/component/emitter/tarball', 'component', 'emitter'],
+  ['https://gitlab.com/component/emitter/zipball', 'component', 'emitter'],
   ['component/emitter#1', 'component', 'emitter'],
   ['component/emitter@1', 'component', 'emitter'],
   ['component/emitter#"1"', 'component', 'emitter'],
   ['component/emitter@"1"', 'component', 'emitter'],
   ['git://gitlab.com/component/emitter.git#1', 'component', 'emitter'],
-  [
-    'https://gitlab.com/component/emitter/tarball/1',
-    'component',
-    'emitter'
-  ],
-  [
-    'https://gitlab.com/component/emitter/zipball/1',
-    'component',
-    'emitter'
-  ],
-  [
-    'https://codeload.gitlab.com/component/emitter/legacy.zip/1',
-    'component',
-    'emitter'
-  ],
-  [
-    'https://codeload.gitlab.com/component/emitter/legacy.tar.gz/1',
-    'component',
-    'emitter'
-  ],
+  ['https://gitlab.com/component/emitter/tarball/1', 'component', 'emitter'],
+  ['https://gitlab.com/component/emitter/zipball/1', 'component', 'emitter'],
   [
     'https://gitlab.com/component/emitter/archive/1.tar.gz',
     'component',
@@ -181,7 +145,7 @@ test('Miscellaneous', function (t) {
 
   t.equal(
     gitlab('12345678', null),
-    '[`1234567`](https://gitlab.com/wooorm/remark/commit/12345678)\n',
+    '[`1234567`](https://foobar.com/wooorm/remark/commit/12345678)\n',
     'should accept a `repository.url` in a `package.json`'
   )
 

@@ -39,10 +39,7 @@ var linkRegex = new RegExp(
   'i'
 )
 
-var repoRegex = new RegExp(
-  urlGroup + repoGroup + '(?=\\.git|[\\/#@]|$)',
-  'i'
-)
+var repoRegex = new RegExp(urlGroup + repoGroup + '(?=\\.git|[\\/#@]|$)', 'i')
 
 var referenceRegex = new RegExp(
   '(' +
@@ -80,7 +77,13 @@ function gitlab(options) {
     throw new Error('Missing `repository` field in `options`')
   }
 
-  repository = {url: repository[1] || 'https://gitlab.com', user: repository[2], project: repository[3]}
+  repository = {
+    url: repository[1]
+      ? repository[1].replace('git://', 'https://')
+      : 'https://gitlab.com',
+    user: repository[2],
+    project: repository[3]
+  }
 
   return transformer
 
@@ -118,7 +121,7 @@ function gitlab(options) {
     return {
       type: 'link',
       title: null,
-      url: 'https://gitlab.com/' + username,
+      url: repository.url + '/' + username,
       children: [node]
     }
   }
@@ -135,7 +138,8 @@ function gitlab(options) {
       type: 'link',
       title: null,
       url:
-        'https://gitlab.com/' +
+        repository.url +
+        '/' +
         repository.user +
         '/' +
         repository.project +
@@ -158,7 +162,8 @@ function gitlab(options) {
       type: 'link',
       title: null,
       url:
-        'https://gitlab.com/' +
+        repository.url +
+        '/' +
         repository.user +
         '/' +
         repository.project +
@@ -202,7 +207,8 @@ function gitlab(options) {
       type: 'link',
       title: null,
       url:
-        'https://gitlab.com/' +
+        repository.url +
+        '/' +
         user +
         '/' +
         (project || repository.project) +
