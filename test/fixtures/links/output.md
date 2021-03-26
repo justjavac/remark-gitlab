@@ -1,9 +1,9 @@
-# GitHub Links
+# GitLab Links
 
 This document tests transformation of links into references.
-The behaviour used on GitHub is very lacking. E.g., commit comments
+The behaviour used on GitLab is very lacking. E.g., commit comments
 are not actually rendered “properly”, the hash of the URL is literally
-shown next to the reference. Another by GitHub unsupported feature is
+shown next to the reference. Another by GitLab unsupported feature is
 references for issues, merge requests, or commits on different projects.
 
 remark-gitlab does support all these systems and makes things look

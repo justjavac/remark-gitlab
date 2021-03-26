@@ -2,7 +2,7 @@
 
 A project-SHA is not relative to the current project.
 
-GitHub’s project names can include alphabetical characters, dashes, and full-stops. They may end in a TLD (such as `.com`), but may not end in `.git` (for obvious reasons).
+GitLab’s project names can include alphabetical characters, dashes, and full-stops. They may end in a TLD (such as `.com`), but may not end in `.git` (for obvious reasons).
 
 *   foo/bar@000000;
 *   [foo/bar@`0000000`](https://gitlab.com/foo/bar/commit/0000000);
