@@ -60,18 +60,18 @@ Now, running `node example` yields:
 Some references:
 
 *   Commit: [`f808317`](https://gitlab.com/justjavac/remark-gitlab/commit/f8083175fe890cbf14f41d0a06e7aa35d4989587)
-*   Commit (fork): [foo@`f808317`](https://gitlab.com/foo/remark-gitlab/commit/f8083175fe890cbf14f41d0a06e7aa35d4989587)
-*   Commit (repo): [justjavac/remark@`e1aa9f6`](https://gitlab.com/justjavac/remark-gitlab/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89)
+*   Commit (fork): [foo@`f808317`](https://gitlab.com/justjavac/foo/commit/f8083175fe890cbf14f41d0a06e7aa35d4989587)
+*   Commit (repo): [justjavac/remark-gitlab@`e1aa9f6`](https://gitlab.com/justjavac/remark-gitlab/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89)
 *   Issue (`#`): [#1](https://gitlab.com/justjavac/remark-gitlab/issues/1)
-*   Issue (fork): [foo#1](https://gitlab.com/foo/remark-gitlab/issues/1)
-*   Issue (project): [justjavac/remark#1](https://gitlab.com/justjavac/remark-gitlab/issues/1)
+*   Issue (fork): [foo#1](https://gitlab.com/justjavac/foo/issues/1)
+*   Issue (project): [justjavac/remark-gitlab#1](https://gitlab.com/justjavac/remark-gitlab/issues/1)
 *   Mention: [**@justjavac**](https://gitlab.com/justjavac)
 
 Some links:
 
-*   Commit: [justjavac/remark@`e1aa9f6`](https://gitlab.com/justjavac/remark-gitlab/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89)
-*   Commit comment: [justjavac/remark@`ac63bc3` (comment)](https://gitlab.com/justjavac/remark-gitlab/commit/ac63bc3abacf14cf08ca5e2d8f1f8e88a7b9015c#commitcomment-16372693)
-*   Issue: [justjavac/remark#182](https://gitlab.com/justjavac/remark-gitlab/issues/182)
+*   Commit: [justjavac/remark-gitlab@`e1aa9f6`](https://gitlab.com/justjavac/remark-gitlab/commit/e1aa9f6c02de18b9459b7d269712bcb50183ce89)
+*   Commit comment: [justjavac/remark-gitlab@`ac63bc3` (comment)](https://gitlab.com/justjavac/remark-gitlab/commit/ac63bc3abacf14cf08ca5e2d8f1f8e88a7b9015c#commitcomment-16372693)
+*   Issue: [justjavac/remark-gitlab#182](https://gitlab.com/justjavac/remark-gitlab/issues/182)
 *   Issue comment: [#3 (comment)](https://gitlab.com/justjavac/remark-gitlab/issues/3#issue-151160339)
 *   Mention: <https://gitlab.com/justjavac>
 ```
@@ -87,16 +87,16 @@ like in gitlab issues, PRs, and comments.
 
 *   Commits:
     `f9c6cca3` → [`f9c6cca3`][sha]
-*   Commits across forks:
-    `justjavac@f9c6cca3` → [justjavac@`f9c6cca3`][sha]
+*   Commits within same namespace:
+    `foo@f9c6cca3` → [foo@`f9c6cca3`][sha]
 *   Commits across projects:
     `user/project@f9c6cca3` → [user/project@`f9c6cca3`][sha]
 *   Hash issues:
     `#1` → [#1][issue]
-*   Issues across forks:
-    `justjavac#1` → [justjavac#1][issue]
+*   Issues within same namespace:
+    `foo#1` → [foo#1][issue]
 *   Issues across projects:
-    `justjavac/remark-gitlab#1` → [justjavac#1][issue]
+    `foo/bar#1` → [foo/bar#1][issue]
 *   At-mentions:
     `@user` → [**\[**@user\*\*\]\*\*][mention]
 
